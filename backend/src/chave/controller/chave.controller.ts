@@ -4,12 +4,12 @@ import { Chave } from '../model/chave.model';
 
 @Controller('chave')
 export class ChaveController {
-   constructor(private readonly chaveService: ChaveService) {}
+  constructor(private readonly chaveService: ChaveService) {}
 
-   @Get()
-   async listarChaves(): Promise<Chave[]> {
-     return this.chaveService.listarChaves();
-   }
+  @Get()
+  async listarChaves(): Promise<Chave[]> {
+    return this.chaveService.listarChaves();
+  }
 }
 
 export { Controller };
